@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"> 
+    <link rel="stylesheet" href="style.css">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>A Inovação Tecnológica no Campo</title>
+
+    <style>
+      
+      /*Define o estilo do corpo da página*/
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f0f0f0;
+            color: #000000;
+            line-height: 1.6;
+        }
+
+        /*Estilo do cabeçalho*/
+        header {
+            background: #2C6B2F;
+            color: white;
+            padding: 10px 0px;
+            justify-content: space-around;
+        }
+
+        /*Estilo do título principal*/
+        header h1 {
+            font-size: 2.5rem;
+            font-weight: bold;
+        }
+
+        /*Estilo da barra de navegação*/
+        nav {
+            background: #1F4D26; 
+            padding: 0.8rem 0;
+            text-align: center;
+        }
+
+        /*Estilo dos links do menu*/
+        nav a {
+            color: white;
+            margin: 0 1rem;
+            text-decoration: none;
+            font-size: 1.1rem;
+        }
+
+        /*mouse passa por cima do link*/
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        /*Seção de destaque com imagem de fundo*/
+        .hero-section {
+            background-image: url(https://www.green4t.com/wp-content/uploads/2023/03/tecnologia-sustetentabilidade-no-campo.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            padding: 5rem 0;
+            text-align: center;
+            color: rgb(255, 255, 255);
+        }
+
+        /*Define tamanho e espaçamento do título e parágrafo da seção principal*/
+        .hero-section h2 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+
+        /*Define tamanho e espaçamento do título e parágrafo da seção principal*/
+        .hero-section p {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+        }
+
+        /*Estilo do botão*/
+        .btn {
+            padding: 1rem 2rem;
+            background-color: #008C3A; 
+            color: white;
+            border-radius: 5px;
+            font-size: 1.1rem;
+            cursor: pointer;
+            transition: 0.3s ease;
+        }
+
+        /*mouse passa por cima do botão e muda de cor*/
+        .btn:hover {
+            background-color: #006F29;
+        }
+
+        /*Seção das inovações tecnológicas*/
+        .innovation-section {
+            font-size: 25px;
+            padding: 30px 20px;
+            background-color: #fff;
+            text-align: center;
+        }
+
+        /*cartões de inovação*/
+        .innovation-cards {
+            display: flex;
+            justify-content: center;
+            gap: 100px;
+            flex-wrap: wrap;
+            margin-top: 30px;
+        }
+
+        /*Estilo de cada cartão*/
+        .innovation-card {
+            background: #ccffcc;
+            padding: 10px;
+            border-radius: 10px;
+            width: 400px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        /*sobe o cartão um pouco com o mouse em cima*/
+        .innovation-card:hover {
+            transform: translateY(-10px);
+        }
+
+        /*A imagem dentro do cartão*/
+        .innovation-card img {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        /*Título e descrição dentro do cartão*/
+        .innovation-card h4 {
+            font-size: 1.5rem;
+            margin-top: 1rem;
+        }
+
+        /*Título e descrição dentro do cartão*/
+        .innovation-card p {
+            font-size: 1rem;
+            color: #555;
+        }
+
+        
+        /*Rodapé da página*/
+        footer {
+            background-color: #2C6B2F;
+            color: white;
+            text-align: center;
+            padding: 1rem 0;
+        }
+
+        /*regras aplicadas somente em telas pequenas*/
+        @media (max-width: 768px) {
+            .hero-section h2 {
+                font-size: 2.5rem;
+            }
+
+            .hero-section p {
+                font-size: 1.1rem;
+            }
+
+            .innovation-cards {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    
+    <header>
+        <h1>A Inovação Tecnológica no Campo</h1>
+    </header>
+    
+    <nav>
+        <a href="#home">Início</a>
+        <a href="#inovacoes">Inovações</a>
+        <a href="#contato">Contato</a>
+    </nav>
+    
+    <section class="hero-section" id="home">
+        <h2>Transformando a Agricultura com Tecnologia</h2>
+        <p>Explore as mais recentes inovações tecnológicas aplicadas ao campo, melhorando a produção e a sustentabilidade.</p>
+        <button class="btn" onclick="showAlert()">Saiba Mais</button>
+    </section>
+    
+    <section class="innovation-section" id="inovacoes">
+        <h3>Inovações Tecnológicas no Campo</h3>
+        <div class="innovation-cards">
+            
+            <div class="innovation-card">
+                <img src="https://mappa.ag/wp-content/uploads/2023/06/drone-agricola-pulverizador.jpg" alt="Drones Agrícolas">
+                <h4>Drones Agrícolas</h4>
+                <p>Uso de drones para monitoramento e análise em tempo real das lavouras.</p>
+            </div>
+            
+            <div class="innovation-card">
+                <img src="https://irrigaglobal.com/br/wp-content/uploads/sites/3/2021/06/estacao-de-campo-foto-capa-scaled.jpg" alt="Sensores de Solo">
+                <h4>Sensores de Solo</h4>
+                <p>Sensores inteligentes para otimização do uso de água e fertilizantes.</p>
+            </div>
+            
+            <div class="innovation-card">
+                <img src="https://www.portaldoagronegocio.com.br/img/cache/cover//storage/images/notices/64a41f9516b91.jpg" alt="Automação Agrícola">
+                <h4>Automação Agrícola</h4>
+                <p>Máquinas autônomas que fazem o plantio e colheita com precisão.</p>
+            </div>
+            
+        </div>
+    </section>
+    
+    
+    <section class="sobrenos">
+    <h2>Sobre nós</h2> 
+    <p> dai aqui vc escreve oq vc quiser sobre o seu site ou a sua impresa sla blablablaskffjbsadfjbagfbc capitche fofs</p>
+    </section>
+    
+    
+    <footer id="contato">
+        <h2>Contato: </h2>
+        <p>Estamos localizados na rua XXXXXXXXXXX</p>
+        <p>Entre em contato por: (XX) XXXXX-XXXX</p>
+        <p>Nos siga nas redes sociais: <a href="https://www.instagram.com">Instagram</a></p>
+        <p>&copy; 2025 A Inovação Técnológica no Campo. Todos os direitos reservados.</p>
+    </footer>
+
+
+    <script>
+        function showAlert() {
+            alert("Obrigado por explorar a Inovação no Campo! Vamos revolucionar a agricultura juntos!");
+        }
+    </script>
+
+</body>
+</html>
