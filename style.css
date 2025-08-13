@@ -8,12 +8,12 @@
 body {
     font-family: 'Arial', sans-serif;
     background-color: #f0f8f0;
-    color: #333;
+    color: #000000;
 }
 
 /* Estilo do cabeçalho */
 header {
-    background-color: #4CAF50;
+    background-color: #e654d2;
     color: white;
     padding: 20px;
     display: flex;
